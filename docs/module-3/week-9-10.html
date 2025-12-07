@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-module-3/week-9-10" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Week 9-10 Practice Guide: AI Perception, Data &amp; Deployment (Chapters 3-5 + Capstone) | Physical AI &amp; Humanoid Robotics Textbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://usmankhan0016.github.io/ai_native-textbook/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://usmankhan0016.github.io/ai_native-textbook/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://usmankhan0016.github.io/ai_native-textbook/docs/module-3/week-9-10"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Week 9-10 Practice Guide: AI Perception, Data &amp; Deployment (Chapters 3-5 + Capstone) | Physical AI &amp; Humanoid Robotics Textbook"><meta data-rh="true" name="description" content="Weeks 16-20 hours | Chapters: 3-5 + Capstone Sprint"><meta data-rh="true" property="og:description" content="Weeks 16-20 hours | Chapters: 3-5 + Capstone Sprint"><link data-rh="true" rel="icon" href="/ai_native-textbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://usmankhan0016.github.io/ai_native-textbook/docs/module-3/week-9-10"><link data-rh="true" rel="alternate" href="https://usmankhan0016.github.io/ai_native-textbook/docs/module-3/week-9-10" hreflang="en"><link data-rh="true" rel="alternate" href="https://usmankhan0016.github.io/ai_native-textbook/docs/module-3/week-9-10" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Module 3: The AI-Robot Brain","item":"https://usmankhan0016.github.io/ai_native-textbook/docs/module-3/"},{"@type":"ListItem","position":2,"name":"Week 9-10: AI & Capstone","item":"https://usmankhan0016.github.io/ai_native-textbook/docs/module-3/week-9-10"}]}</script><link rel="stylesheet" href="/ai_native-textbook/assets/css/styles.ed0e4eec.css">
+<script src="/ai_native-textbook/assets/js/runtime~main.cb11b8cb.js" defer="defer"></script>
+<script src="/ai_native-textbook/assets/js/main.7d8f04d9.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ai_native-textbook/"><div class="navbar__logo"><img src="/ai_native-textbook/img/logo.svg" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ai_native-textbook/img/logo.svg" alt="Physical AI Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI Textbook</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ai_native-textbook/docs/intro">Textbook</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/usmankhan0016/ai_native-textbook" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ai_native-textbook/docs/intro"><span title="Welcome to Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Welcome to Physical AI &amp; Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai_native-textbook/docs/module-1"><span title="Module 1: ROS 2" class="categoryLinkLabel_W154">Module 1: ROS 2</span></a><button aria-label="Collapse sidebar category &#x27;Module 1: ROS 2&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/chapter-1-introduction-to-ros2"><span title="Ch1: Introduction" class="linkLabel_WmDU">Ch1: Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/chapter-2-ros2-architecture"><span title="Ch2: Architecture" class="linkLabel_WmDU">Ch2: Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/chapter-3-ros2-packages-launch"><span title="Chapter 3: Packages, Launch Files, and Parameters" class="linkLabel_WmDU">Chapter 3: Packages, Launch Files, and Parameters</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/chapter-4-urdf-for-humanoids"><span title="Chapter 4: URDF for Humanoid Robots" class="linkLabel_WmDU">Chapter 4: URDF for Humanoid Robots</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/week-3"><span title="Week 3 Practice Guide" class="linkLabel_WmDU">Week 3 Practice Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/week-4"><span title="Week 4 Practice Guide" class="linkLabel_WmDU">Week 4 Practice Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-1/week-5"><span title="Week 5 Practice Guide" class="linkLabel_WmDU">Week 5 Practice Guide</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai_native-textbook/docs/module-2"><span title="Module 2: Digital Twin" class="categoryLinkLabel_W154">Module 2: Digital Twin</span></a><button aria-label="Collapse sidebar category &#x27;Module 2: Digital Twin&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-2/chapter-1-digital-twin-introduction"><span title="Ch.1: Digital Twin Introduction" class="linkLabel_WmDU">Ch.1: Digital Twin Introduction</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-2/chapter-2-gazebo-physics-simulation"><span title="Ch.2: Gazebo Physics" class="linkLabel_WmDU">Ch.2: Gazebo Physics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-2/chapter-3-sensor-simulation"><span title="Ch.3: Sensor Simulation" class="linkLabel_WmDU">Ch.3: Sensor Simulation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-2/chapter-4-unity-high-fidelity-simulation"><span title="Ch.4: Unity High-Fidelity" class="linkLabel_WmDU">Ch.4: Unity High-Fidelity</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-2/week-6"><span title="Week 6: Gazebo Fundamentals" class="linkLabel_WmDU">Week 6: Gazebo Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-2/week-7"><span title="Week 7: Sensors &amp; Unity" class="linkLabel_WmDU">Week 7: Sensors &amp; Unity</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/ai_native-textbook/docs/module-3"><span title="Module 3: The AI-Robot Brain" class="categoryLinkLabel_W154">Module 3: The AI-Robot Brain</span></a><button aria-label="Collapse sidebar category &#x27;Module 3: The AI-Robot Brain&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-3/chapter-1-isaac-introduction"><span title="Ch. 1: Isaac Platform Intro" class="linkLabel_WmDU">Ch. 1: Isaac Platform Intro</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-3/chapter-2-isaac-sim"><span title="Ch. 2: Isaac Sim Robotics" class="linkLabel_WmDU">Ch. 2: Isaac Sim Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-3/chapter-3-isaac-ros"><span title="Ch. 3: Isaac ROS Perception" class="linkLabel_WmDU">Ch. 3: Isaac ROS Perception</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-3/chapter-4-isaac-lab"><span title="Ch. 4: Synthetic Data Isaac Lab" class="linkLabel_WmDU">Ch. 4: Synthetic Data Isaac Lab</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-3/chapter-5-deployment"><span title="Ch. 5: Jetson Deployment" class="linkLabel_WmDU">Ch. 5: Jetson Deployment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-3/week-8"><span title="Week 8: Isaac Foundations" class="linkLabel_WmDU">Week 8: Isaac Foundations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ai_native-textbook/docs/module-3/week-9-10"><span title="Week 9-10: AI &amp; Capstone" class="linkLabel_WmDU">Week 9-10: AI &amp; Capstone</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai_native-textbook/docs/module-4"><span title="Module 4: Vision–Language–Action (VLA) Robotics" class="categoryLinkLabel_W154">Module 4: Vision–Language–Action (VLA) Robotics</span></a><button aria-label="Collapse sidebar category &#x27;Module 4: Vision–Language–Action (VLA) Robotics&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-4/chapter-1-vla-intro"><span title="Chapter 1: Introduction to Vision–Language–Action Robotics" class="linkLabel_WmDU">Chapter 1: Introduction to Vision–Language–Action Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-4/chapter-2-vision-for-vla"><span title="Chapter 2: Vision for VLA – Building Perception Pipelines" class="linkLabel_WmDU">Chapter 2: Vision for VLA – Building Perception Pipelines</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-4/chapter-3-language-planning-whisper-llm"><span title="Chapter 3: Language Planning with Whisper &amp; Large Language Models" class="linkLabel_WmDU">Chapter 3: Language Planning with Whisper &amp; Large Language Models</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-4/chapter-4-vla-control-architecture"><span title="Chapter 4: VLA Control Architecture &amp; Deployment" class="linkLabel_WmDU">Chapter 4: VLA Control Architecture &amp; Deployment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai_native-textbook/docs/module-4/week-13"><span title="Week 13: VLA Capstone Sprint &amp; Integration" class="linkLabel_WmDU">Week 13: VLA Capstone Sprint &amp; Integration</span></a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ai_native-textbook/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ai_native-textbook/docs/module-3"><span>Module 3: The AI-Robot Brain</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Week 9-10: AI &amp; Capstone</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Week 9-10 Practice Guide: AI Perception, Data &amp; Deployment</h1></header>
+<p><strong>Weeks</strong>: 9-10 | <strong>Duration</strong>: 16-20 hours | <strong>Chapters</strong>: 3-5 + Capstone Sprint</p>
+<p>Integrate perception AI, generate training datasets, and deploy to production.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="daily-breakdown-week-9">Daily Breakdown (Week 9)<a href="#daily-breakdown-week-9" class="hash-link" aria-label="Direct link to Daily Breakdown (Week 9)" title="Direct link to Daily Breakdown (Week 9)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monday-isaac-ros-setup--docker-environment-1-hour">Monday: Isaac ROS Setup &amp; Docker Environment (1 hour)<a href="#monday-isaac-ros-setup--docker-environment-1-hour" class="hash-link" aria-label="Direct link to Monday: Isaac ROS Setup &amp; Docker Environment (1 hour)" title="Direct link to Monday: Isaac ROS Setup &amp; Docker Environment (1 hour)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Understand Isaac ROS (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Read Chapter 3 &quot;Isaac ROS Architecture&quot;</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Understand: CUDA acceleration, perception modules, Jetson deployment</li>
+</ul>
+</li>
+<li class="">
+<p>Install Isaac ROS Docker (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Docker installed? <code>docker --version</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Pull Isaac ROS image: <code>docker pull nvcr.io/nvidia/isaac/ros:humble</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify NVIDIA Docker runtime: <code>docker run --rm --runtime nvidia nvidia/cuda:12.0-runtime nvidia-smi</code></li>
+</ul>
+</li>
+<li class="">
+<p>Test perception modules (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch Isaac ROS container</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify CUDA available inside: <code>nvcc --version</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->List perception modules: <code>ros2 pkg list | grep isaac</code></li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Docker running with NVIDIA GPU support</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Isaac ROS packages installed</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Can access CUDA from within container</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tuesday-object-detection-deployment-15-hours">Tuesday: Object Detection Deployment (1.5 hours)<a href="#tuesday-object-detection-deployment-15-hours" class="hash-link" aria-label="Direct link to Tuesday: Object Detection Deployment (1.5 hours)" title="Direct link to Tuesday: Object Detection Deployment (1.5 hours)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Load pre-trained detection model (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use Chapter 3 code: <code>object_detection_node.py</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Load YOLOv5 small model</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify model loads: ~80MB FP32</li>
+</ul>
+</li>
+<li class="">
+<p>Connect to humanoid camera (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->From Week 8, use Isaac Sim with humanoid + RGB-D camera</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Publish <code>/camera/image_raw</code> from Isaac Sim</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->In separate terminal, run detection node</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify detections published to <code>/detections</code></li>
+</ul>
+</li>
+<li class="">
+<p>Test real-time performance (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Run <code>ros2 topic hz /detections</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify &gt;10 FPS (100ms per frame)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check CPU/GPU load: <code>nvidia-smi</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Identify bottlenecks if slow</li>
+</ul>
+</li>
+<li class="">
+<p>Visualize detections (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use RViz: <code>ros2 run rviz2 rviz2</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Add <code>/camera/image_raw</code> display</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Add <code>/detections</code> visualization (bounding boxes)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Observe: Are detections correct?</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Detection model loaded</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Real-time inference &gt;10 FPS</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Detections visualized in RViz</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model correctly identifies objects</li>
+</ul>
+<p><strong>Challenge</strong>:
+Deploy multiple detection models (YOLO, ResNet). Compare accuracy vs. speed.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wednesday-visual-slam--sensor-fusion-15-hours">Wednesday: Visual SLAM &amp; Sensor Fusion (1.5 hours)<a href="#wednesday-visual-slam--sensor-fusion-15-hours" class="hash-link" aria-label="Direct link to Wednesday: Visual SLAM &amp; Sensor Fusion (1.5 hours)" title="Direct link to Wednesday: Visual SLAM &amp; Sensor Fusion (1.5 hours)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Visual SLAM setup (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Review Chapter 3 SLAM explanation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use <code>visual_slam_node.py</code> code</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Understand: feature matching, pose estimation, mapping</li>
+</ul>
+</li>
+<li class="">
+<p>Run SLAM with moving humanoid (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->In Isaac Sim, animate humanoid walking</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch SLAM node: <code>ros2 run ... visual_slam_node.py</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Monitor: <code>/map</code> and <code>/pose</code> topics</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->In RViz, add Map and Pose visualizations</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Observe: Map building in real-time</li>
+</ul>
+</li>
+<li class="">
+<p>Test sensor fusion (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch fusion node with camera + LiDAR + IMU</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Subscribe to all three sensor streams</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fuse with Kalman filter (Chapter 3 code)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Visualize fused estimate in RViz</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Block camera → verify LiDAR compensates</li>
+</ul>
+</li>
+<li class="">
+<p>Measure accuracy (10 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Compare fused vs. camera-only pose</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fused should be smoother (less jittery)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fused should be robust to sensor failures</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->SLAM node running, building map</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Sensor fusion working (3+ sensors)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fused estimate smoother than individual sensors</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Robust to sensor dropouts</li>
+</ul>
+<p><strong>Measurement</strong>:
+Document: Is sensor fusion noticeably better than single sensor? By how much?</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thursday-isaac-lab--domain-randomization-15-hours">Thursday: Isaac Lab &amp; Domain Randomization (1.5 hours)<a href="#thursday-isaac-lab--domain-randomization-15-hours" class="hash-link" aria-label="Direct link to Thursday: Isaac Lab &amp; Domain Randomization (1.5 hours)" title="Direct link to Thursday: Isaac Lab &amp; Domain Randomization (1.5 hours)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Understand Isaac Lab (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Read Chapter 4 &quot;Isaac Lab Framework&quot;</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Understand: gymnasium environments, domain randomization</li>
+</ul>
+</li>
+<li class="">
+<p>Set up Isaac Lab environment (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Install Isaac Lab: <code>pip install omni-isaac-lab</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify installation: <code>python3 -c &quot;from omni.isaac.lab.envs import ManagerBasedEnv&quot;</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Review <code>humanoid_task.py</code> code</li>
+</ul>
+</li>
+<li class="">
+<p>Create simple randomized task (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Create 2-3 versions of humanoid scene</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Version 1: No randomization (baseline)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Version 2: Light randomization (colors, materials)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Version 3: Full randomization (physics, scene layout)</li>
+</ul>
+</li>
+<li class="">
+<p>Generate synthetic dataset (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use <code>generate_dataset.py</code> from Chapter 4</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Generate 5,000 frames (should take ~5 min)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify RGB + depth + segmentation exported</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Check file sizes reasonable (~5-10 MB for 5K frames)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Isaac Lab environments created</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Domain randomization working (observe differences between versions)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->5,000+ frames exported</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Dataset ready for ML training</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="friday-data-export--training-integration-15-hours">Friday: Data Export &amp; Training Integration (1.5 hours)<a href="#friday-data-export--training-integration-15-hours" class="hash-link" aria-label="Direct link to Friday: Data Export &amp; Training Integration (1.5 hours)" title="Direct link to Friday: Data Export &amp; Training Integration (1.5 hours)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Prepare full dataset (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Generate larger dataset: 10,000 frames</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Export RGB, depth, segmentation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Create COCO format annotations (use Chapter 4 code)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify annotations valid JSON</li>
+</ul>
+</li>
+<li class="">
+<p>Create PyTorch dataset loader (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use Chapter 4 code: <code>SyntheticDataset</code> class</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Load 10,000 frames with COCO labels</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test DataLoader: <code>batch = next(iter(loader))</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify batch shapes correct</li>
+</ul>
+</li>
+<li class="">
+<p>Quick training test (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Load pre-trained detection model</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Train for 1 epoch on synthetic data</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Monitor loss: Should decrease over batch</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Save checkpoint</li>
+</ul>
+</li>
+<li class="">
+<p>Prepare for transfer learning (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Save synthetic-trained model checkpoint</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Document: Accuracy on synthetic test set</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ready for fine-tuning on real data (Chapter 4)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->10K+ frame dataset generated</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->COCO annotations valid</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->PyTorch DataLoader working</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Training runs without errors</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model checkpoint saved</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="daily-breakdown-week-10">Daily Breakdown (Week 10)<a href="#daily-breakdown-week-10" class="hash-link" aria-label="Direct link to Daily Breakdown (Week 10)" title="Direct link to Daily Breakdown (Week 10)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monday-tuesday-model-optimization-for-jetson-2-hours">Monday-Tuesday: Model Optimization for Jetson (2 hours)<a href="#monday-tuesday-model-optimization-for-jetson-2-hours" class="hash-link" aria-label="Direct link to Monday-Tuesday: Model Optimization for Jetson (2 hours)" title="Direct link to Monday-Tuesday: Model Optimization for Jetson (2 hours)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Review optimization techniques (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Understand FP32 vs. FP16 vs. INT8 tradeoffs (Chapter 5)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Know speedup targets: 3-5x FP16, 8x INT8</li>
+</ul>
+</li>
+<li class="">
+<p>Convert to TensorRT FP16 (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use <code>optimize_model.py</code> from Chapter 5</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Load synthetic-trained model</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Convert to TensorRT FP16</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify model size: ~50% reduction</li>
+</ul>
+</li>
+<li class="">
+<p>Benchmark on GPU (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Run <code>benchmark_model()</code> function</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Measure latency: FP32 vs. FP16</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Document speedup: Should be 2-3x</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify accuracy unchanged (<code>&lt;1%</code> loss)</li>
+</ul>
+</li>
+<li class="">
+<p>Optional: INT8 Quantization (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->If interested, convert to INT8</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Benchmark again: Should be 8x faster</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Measure accuracy loss: <code>&lt;5%</code> acceptable?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->For deployment, choose FP16 or INT8</li>
+</ul>
+</li>
+<li class="">
+<p>Test on Jetson (if available) (35 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Copy model to physical Jetson Orin Nano</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Run inference: Should be &gt;15 FPS</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Profile latency (use Chapter 5 profiler)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify model runs in real-time</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model converted to TensorRT</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Latency reduced 3-5x vs. FP32</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Accuracy loss <code>&lt;5%</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ready for deployment</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wednesday-jetson-simulator-deployment-2-hours">Wednesday: Jetson Simulator Deployment (2 hours)<a href="#wednesday-jetson-simulator-deployment-2-hours" class="hash-link" aria-label="Direct link to Wednesday: Jetson Simulator Deployment (2 hours)" title="Direct link to Wednesday: Jetson Simulator Deployment (2 hours)" translate="no">​</a></h3>
+<p><strong>Morning Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Set up Jetson simulator environment (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Review Chapter 5 deployment architecture</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use Docker container simulating Jetson Orin Nano</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Copy optimized TensorRT model into container</li>
+</ul>
+</li>
+<li class="">
+<p>Deploy Isaac ROS perception (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch Isaac ROS perception nodes in Docker</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Start humanoid simulation (Isaac Sim)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Bridge sim camera to Docker container</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Run inference inside Docker</li>
+</ul>
+</li>
+<li class="">
+<p>Implement real-time control loop (40 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Use Chapter 5 code: <code>realtime_control_loop.py</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Implement latency budgeting</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Monitor all components <code>&lt;33ms</code> total</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Detect and alert if budget exceeded</li>
+</ul>
+</li>
+<li class="">
+<p>Test safety mechanisms (30 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Implement watchdog (Chapter 5)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Test: Kill control process → watchdog triggers</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Implement emergency stop</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Verify robot halts immediately</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Optimized model running in Docker</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Real-time control loop <code>&lt;33ms</code> per frame</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Watchdog working</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Emergency stop functional</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thursday-friday-capstone-sprint-4-hours">Thursday-Friday: Capstone Sprint (4 hours)<a href="#thursday-friday-capstone-sprint-4-hours" class="hash-link" aria-label="Direct link to Thursday-Friday: Capstone Sprint (4 hours)" title="Direct link to Thursday-Friday: Capstone Sprint (4 hours)" translate="no">​</a></h3>
+<p><strong>Capstone Project: &quot;Humanoid AI Assistant&quot;</strong></p>
+<p>Integrate everything into one complete system.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-1-system-architecture-setup-1-hour">Part 1: System Architecture Setup (1 hour)<a href="#part-1-system-architecture-setup-1-hour" class="hash-link" aria-label="Direct link to Part 1: System Architecture Setup (1 hour)" title="Direct link to Part 1: System Architecture Setup (1 hour)" translate="no">​</a></h4>
+<p><strong>Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Define system architecture (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Create diagram: Isaac Sim → ROS 2 → Perception → Control → Humanoid</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Document data flow (camera → detection → decision → motion)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Identify latency bottlenecks</li>
+</ul>
+</li>
+<li class="">
+<p>Implement HAL (Hardware Abstraction Layer) (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Write interface: <code>class RobotController</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Methods: <code>move_to(target)</code>, <code>stop()</code>, <code>check_safety()</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Works identically in sim and on real Jetson</li>
+</ul>
+</li>
+<li class="">
+<p>Set up ROS 2 launch file (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Create <code>humanoid_ai.launch.py</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch all nodes in correct order:<!-- -->
+<ul>
+<li class="">Isaac Sim bridge</li>
+<li class="">Perception node</li>
+<li class="">Control node</li>
+<li class="">Safety monitor</li>
+<li class="">(optional) Visualization (RViz)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Architecture documented</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->HAL implemented</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch file created and tested</li>
+</ul>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-2-ai-perception-system-1-hour">Part 2: AI Perception System (1 hour)<a href="#part-2-ai-perception-system-1-hour" class="hash-link" aria-label="Direct link to Part 2: AI Perception System (1 hour)" title="Direct link to Part 2: AI Perception System (1 hour)" translate="no">​</a></h4>
+<p><strong>Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Object detection (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Deploy TensorRT-optimized detector</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Detect humanoids, obstacles, target objects</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Confidence threshold tuning</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Real-time performance &gt;10 FPS</li>
+</ul>
+</li>
+<li class="">
+<p>Visual SLAM (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->SLAM node mapping environment</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Localization: Know robot&#x27;s position in map</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Combine with object detection: &quot;Object at position [x,y,z]&quot;</li>
+</ul>
+</li>
+<li class="">
+<p>Sensor fusion (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Fuse camera + LiDAR + IMU</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Robust to sensor failures</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Clean, smooth perception output</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Object detection &gt;80% accuracy</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->SLAM mapping real-time</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Sensor fusion robust</li>
+</ul>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-3-decision--control-1-hour">Part 3: Decision &amp; Control (1 hour)<a href="#part-3-decision--control-1-hour" class="hash-link" aria-label="Direct link to Part 3: Decision &amp; Control (1 hour)" title="Direct link to Part 3: Decision &amp; Control (1 hour)" translate="no">​</a></h4>
+<p><strong>Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Decision logic (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->State machine or behavior tree</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->States: Idle, Searching, Approaching, Grasping</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Transitions based on perceptions</li>
+</ul>
+</li>
+<li class="">
+<p>Motion control (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Implement reach, grasp, lift behaviors</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Real-time control loop (Chapter 5)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Safety constraints: Joint limits, collision avoidance</li>
+</ul>
+</li>
+<li class="">
+<p>Integration test (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Launch full system</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Place target object</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Humanoid should detect → approach → grasp</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Measure success rate over 10 trials</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Decision logic working</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Motion commands correct</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Full system integrated and tested</li>
+</ul>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-4-safety--production-readiness-05-hour">Part 4: Safety &amp; Production Readiness (0.5 hour)<a href="#part-4-safety--production-readiness-05-hour" class="hash-link" aria-label="Direct link to Part 4: Safety &amp; Production Readiness (0.5 hour)" title="Direct link to Part 4: Safety &amp; Production Readiness (0.5 hour)" translate="no">​</a></h4>
+<p><strong>Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Safety mechanisms (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Watchdog: Detects frozen nodes</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Emergency stop: Hardware cutoff</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Rate limiting: Prevent command spam</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Graceful degradation: Use fallback if sensor fails</li>
+</ul>
+</li>
+<li class="">
+<p>Logging &amp; monitoring (15 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Log all decisions + outcomes</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Monitor performance metrics (FPS, latency, accuracy)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Alert on anomalies</li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All safety mechanisms tested</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->System handles failures gracefully</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Monitoring in place</li>
+</ul>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-5-documentation--demo-05-hour">Part 5: Documentation &amp; Demo (0.5 hour)<a href="#part-5-documentation--demo-05-hour" class="hash-link" aria-label="Direct link to Part 5: Documentation &amp; Demo (0.5 hour)" title="Direct link to Part 5: Documentation &amp; Demo (0.5 hour)" translate="no">​</a></h4>
+<p><strong>Tasks</strong>:</p>
+<ol>
+<li class="">
+<p>Write documentation (20 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Architecture overview (1 page)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Deployment guide (1 page)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Troubleshooting guide (1 page)</li>
+</ul>
+</li>
+<li class="">
+<p>Record demo video (10 min)</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->4-5 minute video showing:<!-- -->
+<ul>
+<li class="">Humanoid in scene with target object</li>
+<li class="">Object detection in action</li>
+<li class="">SLAM mapping</li>
+<li class="">Humanoid approaching/grasping target</li>
+<li class="">Real-time performance metrics overlay</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Save as: <code>capstone_demo.mp4</code></li>
+</ul>
+</li>
+</ol>
+<p><strong>Success Criteria</strong>:</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->3-page documentation</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->4-5 min demo video</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ready for capstone submission</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="capstone-project-acceptance-criteria">Capstone Project Acceptance Criteria<a href="#capstone-project-acceptance-criteria" class="hash-link" aria-label="Direct link to Capstone Project Acceptance Criteria" title="Direct link to Capstone Project Acceptance Criteria" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="perception">Perception<a href="#perception" class="hash-link" aria-label="Direct link to Perception" title="Direct link to Perception" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Object detection accuracy &gt;80% on test set</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Detection runs real-time (&gt;10 FPS on Jetson)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Robust to lighting changes (domain randomization trained)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Confident detections (&gt;0.5 confidence threshold)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="control--safety">Control &amp; Safety<a href="#control--safety" class="hash-link" aria-label="Direct link to Control &amp; Safety" title="Direct link to Control &amp; Safety" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Real-time control loop <code>&lt;33ms</code></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Watchdog triggers within 100ms of failure</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Emergency stop activates within 50ms</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Graceful degradation if sensor fails</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="integration">Integration<a href="#integration" class="hash-link" aria-label="Direct link to Integration" title="Direct link to Integration" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All modules integrated (perception → decision → control)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Hardware abstraction layer working (sim and real)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->ROS 2 communication stable</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->No crashes or deadlocks over 5-minute run</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="documentation">Documentation<a href="#documentation" class="hash-link" aria-label="Direct link to Documentation" title="Direct link to Documentation" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Architecture diagram</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Deployment procedures clear</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Latency metrics documented</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Demo video shows system in action</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="independent-exercises">Independent Exercises<a href="#independent-exercises" class="hash-link" aria-label="Direct link to Independent Exercises" title="Direct link to Independent Exercises" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-1-multi-model-ensemble-1-hour">Exercise 1: Multi-Model Ensemble (1 hour)<a href="#exercise-1-multi-model-ensemble-1-hour" class="hash-link" aria-label="Direct link to Exercise 1: Multi-Model Ensemble (1 hour)" title="Direct link to Exercise 1: Multi-Model Ensemble (1 hour)" translate="no">​</a></h3>
+<p>Run 2-3 detection models in parallel. Compare accuracy vs. speed. Which is better?</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-2-adaptive-control-1-hour">Exercise 2: Adaptive Control (1 hour)<a href="#exercise-2-adaptive-control-1-hour" class="hash-link" aria-label="Direct link to Exercise 2: Adaptive Control (1 hour)" title="Direct link to Exercise 2: Adaptive Control (1 hour)" translate="no">​</a></h3>
+<p>Implement control that adapts based on perception confidence. If confident, move fast. If uncertain, move cautiously.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-3-hardware-stress-test-1-hour">Exercise 3: Hardware Stress Test (1 hour)<a href="#exercise-3-hardware-stress-test-1-hour" class="hash-link" aria-label="Direct link to Exercise 3: Hardware Stress Test (1 hour)" title="Direct link to Exercise 3: Hardware Stress Test (1 hour)" translate="no">​</a></h3>
+<p>Run system for 30 minutes. Monitor latency, memory, thermal. Any degradation?</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenge-project-real-world-transfer-bonus-2-3-hours">Challenge Project: Real-World Transfer (Bonus, 2-3 hours)<a href="#challenge-project-real-world-transfer-bonus-2-3-hours" class="hash-link" aria-label="Direct link to Challenge Project: Real-World Transfer (Bonus, 2-3 hours)" title="Direct link to Challenge Project: Real-World Transfer (Bonus, 2-3 hours)" translate="no">​</a></h2>
+<p>If you have real-world images of objects:</p>
+<ol>
+<li class="">Fine-tune synthetic-trained model on real images (Chapter 4)</li>
+<li class="">Measure improvement: How much better on real data?</li>
+<li class="">Deploy fine-tuned model</li>
+<li class="">Evaluate capstone metrics on real humanoid (if available)</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="week-9-10-completion-checklist">Week 9-10 Completion Checklist<a href="#week-9-10-completion-checklist" class="hash-link" aria-label="Direct link to Week 9-10 Completion Checklist" title="Direct link to Week 9-10 Completion Checklist" translate="no">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Isaac ROS Docker environment working</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Object detection deployed and real-time</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Visual SLAM mapping in real-time</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Sensor fusion implemented and tested</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->10,000+ synthetic images generated</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Model optimized (TensorRT FP16 or INT8)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Deployed to Jetson simulator</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Real-time control loop implemented</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Safety mechanisms (watchdog, e-stop) working</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Capstone project complete</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Architecture documentation written</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Demo video recorded</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All exercises completed</li>
+</ul>
+<p><strong>By end of Week 10</strong>: ✅ Module 3 Complete. Ready to deploy or continue to Module 4.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="latency-exceeds-budget">Latency Exceeds Budget<a href="#latency-exceeds-budget" class="hash-link" aria-label="Direct link to Latency Exceeds Budget" title="Direct link to Latency Exceeds Budget" translate="no">​</a></h3>
+<ul>
+<li class="">Check: Is perception the bottleneck? (run profiler)</li>
+<li class="">Solution: Reduce image resolution, lower detection confidence threshold, use INT8 quantization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="slam-drifts--map-incorrect">SLAM Drifts / Map Incorrect<a href="#slam-drifts--map-incorrect" class="hash-link" aria-label="Direct link to SLAM Drifts / Map Incorrect" title="Direct link to SLAM Drifts / Map Incorrect" translate="no">​</a></h3>
+<ul>
+<li class="">Check: Are camera intrinsics correct?</li>
+<li class="">Solution: Lower feature matching threshold, increase map update frequency</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensor-fusion-unstable">Sensor Fusion Unstable<a href="#sensor-fusion-unstable" class="hash-link" aria-label="Direct link to Sensor Fusion Unstable" title="Direct link to Sensor Fusion Unstable" translate="no">​</a></h3>
+<ul>
+<li class="">Check: Are sensor data rates synchronized?</li>
+<li class="">Solution: Implement message buffer (e.g., ApproximateTimeSynchronizer from ROS 2)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capstone-safety-fails">Capstone Safety Fails<a href="#capstone-safety-fails" class="hash-link" aria-label="Direct link to Capstone Safety Fails" title="Direct link to Capstone Safety Fails" translate="no">​</a></h3>
+<ul>
+<li class="">Check: Is watchdog timeout too short?</li>
+<li class="">Solution: Increase timeout to 1 second, verify control node publishing heartbeat</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-pace">Recommended Pace<a href="#recommended-pace" class="hash-link" aria-label="Direct link to Recommended Pace" title="Direct link to Recommended Pace" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>Week 9 Mon-Fri</strong>: 6-8 hours (perception + data generation)</li>
+<li class=""><strong>Week 10 Mon-Tue</strong>: 4 hours (model optimization)</li>
+<li class=""><strong>Week 10 Wed</strong>: 2 hours (deployment)</li>
+<li class=""><strong>Week 10 Thu-Fri</strong>: 4 hours (capstone sprint)</li>
+<li class=""><strong>Total</strong>: 16-20 hours</li>
+</ul>
+<p>Aim to complete capstone by Friday. Use weekend to refine if needed.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resources">Resources<a href="#resources" class="hash-link" aria-label="Direct link to Resources" title="Direct link to Resources" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://nvidia-isaac-ros.github.io/" target="_blank" rel="noopener noreferrer" class="">Isaac ROS Documentation</a></li>
+<li class=""><a href="https://docs.nvidia.com/jetson/" target="_blank" rel="noopener noreferrer" class="">Jetson Deployment Guide</a></li>
+<li class=""><a href="https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/" target="_blank" rel="noopener noreferrer" class="">TensorRT Inference</a></li>
+<li class=""><a href="https://docs.ros.org/en/humble/Concepts/About-Real-Time.html" target="_blank" rel="noopener noreferrer" class="">ROS 2 Real-Time</a></li>
+</ul>
+<hr>
+<p><strong>Congratulations on completing Module 3!</strong> 🤖🚀</p>
+<p>Next: Module 4 (Vision-Language-Action Robotics) or capstone refinement.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/ai_native-textbook/docs/tags/practice-guide">practice-guide</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/ai_native-textbook/docs/tags/week-9">week-9</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/ai_native-textbook/docs/tags/week-10">week-10</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/ai_native-textbook/docs/tags/capstone">capstone</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/ai_native-textbook/docs/tags/deployment">deployment</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/ai_native-textbook/docs/tags/perception">perception</a></li></ul></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ai_native-textbook/docs/module-3/week-8"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Week 8: Isaac Foundations</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ai_native-textbook/docs/module-4"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Module 4: Vision–Language–Action (VLA) Robotics</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#daily-breakdown-week-9" class="table-of-contents__link toc-highlight">Daily Breakdown (Week 9)</a><ul><li><a href="#monday-isaac-ros-setup--docker-environment-1-hour" class="table-of-contents__link toc-highlight">Monday: Isaac ROS Setup &amp; Docker Environment (1 hour)</a></li><li><a href="#tuesday-object-detection-deployment-15-hours" class="table-of-contents__link toc-highlight">Tuesday: Object Detection Deployment (1.5 hours)</a></li><li><a href="#wednesday-visual-slam--sensor-fusion-15-hours" class="table-of-contents__link toc-highlight">Wednesday: Visual SLAM &amp; Sensor Fusion (1.5 hours)</a></li><li><a href="#thursday-isaac-lab--domain-randomization-15-hours" class="table-of-contents__link toc-highlight">Thursday: Isaac Lab &amp; Domain Randomization (1.5 hours)</a></li><li><a href="#friday-data-export--training-integration-15-hours" class="table-of-contents__link toc-highlight">Friday: Data Export &amp; Training Integration (1.5 hours)</a></li></ul></li><li><a href="#daily-breakdown-week-10" class="table-of-contents__link toc-highlight">Daily Breakdown (Week 10)</a><ul><li><a href="#monday-tuesday-model-optimization-for-jetson-2-hours" class="table-of-contents__link toc-highlight">Monday-Tuesday: Model Optimization for Jetson (2 hours)</a></li><li><a href="#wednesday-jetson-simulator-deployment-2-hours" class="table-of-contents__link toc-highlight">Wednesday: Jetson Simulator Deployment (2 hours)</a></li><li><a href="#thursday-friday-capstone-sprint-4-hours" class="table-of-contents__link toc-highlight">Thursday-Friday: Capstone Sprint (4 hours)</a></li></ul></li><li><a href="#capstone-project-acceptance-criteria" class="table-of-contents__link toc-highlight">Capstone Project Acceptance Criteria</a><ul><li><a href="#perception" class="table-of-contents__link toc-highlight">Perception</a></li><li><a href="#control--safety" class="table-of-contents__link toc-highlight">Control &amp; Safety</a></li><li><a href="#integration" class="table-of-contents__link toc-highlight">Integration</a></li><li><a href="#documentation" class="table-of-contents__link toc-highlight">Documentation</a></li></ul></li><li><a href="#independent-exercises" class="table-of-contents__link toc-highlight">Independent Exercises</a><ul><li><a href="#exercise-1-multi-model-ensemble-1-hour" class="table-of-contents__link toc-highlight">Exercise 1: Multi-Model Ensemble (1 hour)</a></li><li><a href="#exercise-2-adaptive-control-1-hour" class="table-of-contents__link toc-highlight">Exercise 2: Adaptive Control (1 hour)</a></li><li><a href="#exercise-3-hardware-stress-test-1-hour" class="table-of-contents__link toc-highlight">Exercise 3: Hardware Stress Test (1 hour)</a></li></ul></li><li><a href="#challenge-project-real-world-transfer-bonus-2-3-hours" class="table-of-contents__link toc-highlight">Challenge Project: Real-World Transfer (Bonus, 2-3 hours)</a></li><li><a href="#week-9-10-completion-checklist" class="table-of-contents__link toc-highlight">Week 9-10 Completion Checklist</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href="#latency-exceeds-budget" class="table-of-contents__link toc-highlight">Latency Exceeds Budget</a></li><li><a href="#slam-drifts--map-incorrect" class="table-of-contents__link toc-highlight">SLAM Drifts / Map Incorrect</a></li><li><a href="#sensor-fusion-unstable" class="table-of-contents__link toc-highlight">Sensor Fusion Unstable</a></li><li><a href="#capstone-safety-fails" class="table-of-contents__link toc-highlight">Capstone Safety Fails</a></li></ul></li><li><a href="#recommended-pace" class="table-of-contents__link toc-highlight">Recommended Pace</a></li><li><a href="#resources" class="table-of-contents__link toc-highlight">Resources</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Modules</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ai_native-textbook/docs/module-1">Module 1: ROS 2</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://docs.ros.org/en/humble/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS 2 Documentation<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://developer.nvidia.com/isaac-sim" target="_blank" rel="noopener noreferrer" class="footer__link-item">NVIDIA Isaac Sim<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/usmankhan0016/ai_native-textbook" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
