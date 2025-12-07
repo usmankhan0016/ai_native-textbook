@@ -955,4 +955,4 @@ Ready? Move to **[Chapter 2: Isaac Sim for Photorealistic Robotics Simulation](.
 
 ---
 
-**Questions?** See [Chapter 1 Debugging Tips](./chapter-1-isaac-introduction.md#debugging) or ask in [Module 3 Discussions](https://github.com/ai-robotics-textbook/issues).
+**Questions?** Check the official [Isaac Sim Documentation](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/overview.html) or ask in the community.
