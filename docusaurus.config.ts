@@ -11,15 +11,17 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://usmankhan0016.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/ai_native-textbook/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "your-org", // Usually your GitHub org/user name.
-  projectName: "physical-ai-textbook", // Usually your repo name.
+  organizationName: "usmankhan0016", // Usually your GitHub org/user name.
+  projectName: "ai_native-textbook", // Usually your repo name.
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   onBrokenLinks: "throw",
 
@@ -87,7 +89,7 @@ const config: Config = {
           label: "Textbook",
         },
         {
-          href: "https://github.com/your-org/physical-ai-textbook",
+          href: "https://github.com/usmankhan0016/ai_native-textbook",
           label: "GitHub",
           position: "right",
         },
@@ -123,7 +125,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/your-org/physical-ai-textbook",
+              href: "https://github.com/usmankhan0016/ai_native-textbook",
             },
           ],
         },
