@@ -1,0 +1,135 @@
+/* CTA Section */
+.ctaSection {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #1a2a4e 0%, #2d1b4e 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(240, 147, 251, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme='dark'] .ctaSection {
+  background: linear-gradient(135deg, #0a1929 0%, #1a0f2e 100%);
+}
+
+[data-theme='dark'] .ctaSection::before {
+  background:
+    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(240, 147, 251, 0.05) 0%, transparent 50%);
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+}
+
+.ctaHeading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+[data-theme='light'] .ctaHeading {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .ctaHeading {
+  color: #ffffff;
+}
+
+.ctaSubtitle {
+  font-size: 1.125rem;
+  color: #e0e0e0;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+[data-theme='light'] .ctaSubtitle {
+  color: #f0f0f0;
+}
+
+[data-theme='dark'] .ctaSubtitle {
+  color: #d0d0d0;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 996px) {
+  .ctaSection {
+    padding: 4rem 0;
+  }
+
+  .ctaHeading {
+    font-size: 2rem;
+  }
+
+  .ctaSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaSection {
+    padding: 3rem 0;
+  }
+
+  .ctaContent {
+    padding: 0 1rem;
+  }
+
+  .ctaHeading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .ctaSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .ctaButton {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+}

@@ -1,10 +1,10 @@
 import clsx from "clsx";
+import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  icon: string;
   description: JSX.Element;
   link: string;
   highlights: string[];
@@ -13,7 +13,6 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Module 1: ROS 2 Fundamentals",
-    icon: "⚙️",
     link: "/docs/module-1",
     highlights: ["Nodes & Topics", "Services & Actions", "URDF for Humanoids"],
     description: (
@@ -25,7 +24,6 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Module 2: Digital Twin Simulation",
-    icon: "🎮",
     link: "/docs/module-2",
     highlights: ["Gazebo Physics", "Unity Rendering", "Sensor Simulation"],
     description: (
@@ -37,7 +35,6 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Module 3: NVIDIA Isaac Platform",
-    icon: "🟩",
     link: "/docs/module-3",
     highlights: ["Isaac Sim", "Synthetic Data", "Isaac ROS & Lab"],
     description: (
@@ -49,7 +46,6 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Module 4: Vision-Language-Action",
-    icon: "🧠",
     link: "/docs/module-4",
     highlights: ["Computer Vision", "LLM Planning", "VLA Control"],
     description: (
@@ -61,22 +57,23 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, icon, description, link, highlights }: FeatureItem) {
+function Feature({ title, description, link, highlights }: FeatureItem) {
   return (
-    <div className={clsx("col col--3")}>
-      <a href={link} className={clsx(styles.featureCard, "glass-card")}>
-        <div className={styles.featureIcon}>{icon}</div>
+    <div className={clsx("col col--6 col--lg-3")}>
+      <div className={styles.featureCard}>
         <Heading as="h3" className={styles.featureTitle}>
           {title}
         </Heading>
         <p className={styles.featureDescription}>{description}</p>
         <ul className={styles.featureHighlights}>
           {highlights.map((item, idx) => (
-            <li key={idx}>• {item}</li>
+            <li key={idx}>{item}</li>
           ))}
         </ul>
-        <div className={styles.featureLink}>Learn More →</div>
-      </a>
+        <Link to={link} className={styles.featureButton}>
+          Open Module →
+        </Link>
+      </div>
     </div>
   );
 }

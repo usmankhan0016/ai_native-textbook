@@ -8,7 +8,7 @@ const config: Config = {
   title: "Physical AI & Humanoid Robotics Textbook",
   tagline:
     "Master ROS 2, Digital Twin Simulation, NVIDIA Isaac, and Vision-Language-Action Robotics",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
 
   // Set the production url of your site here
   url: "https://usmankhan0016.github.io",
