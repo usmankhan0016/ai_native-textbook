@@ -1,17 +1,13 @@
-/* Hero Section */
+/* Hero Section - Elegant Minimal Design */
 .heroBanner {
   padding: 8rem 0 6rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    rgba(102, 126, 234, 0.15) 0%,
-    rgba(118, 75, 162, 0.15) 50%,
-    rgba(102, 126, 234, 0.1) 100%
-  );
+  background: linear-gradient(180deg, #ffffff 0%, #fafbff 50%, #f5f7ff 100%);
 }
 
+/* Animated Tech Grid Background */
 .heroBanner::before {
   content: '';
   position: absolute;
@@ -20,19 +16,65 @@
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.08) 0%, transparent 50%);
+    /* Horizontal lines */
+    repeating-linear-gradient(
+      0deg,
+      rgba(59, 130, 246, 0.15) 0px,
+      rgba(59, 130, 246, 0.15) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    /* Vertical lines */
+    repeating-linear-gradient(
+      90deg,
+      rgba(139, 92, 246, 0.12) 0px,
+      rgba(139, 92, 246, 0.12) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    /* Gradient overlays */
+    radial-gradient(ellipse 600px 400px at 20% 0%, rgba(59, 130, 246, 0.25) 0%, transparent 40%),
+    radial-gradient(ellipse 600px 400px at 80% 100%, rgba(139, 92, 246, 0.2) 0%, transparent 40%);
   pointer-events: none;
   z-index: 0;
+  animation: gridShift 15s linear infinite;
+}
+
+@keyframes gridShift {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 160px, 0 0, 0 0, 0 0;
+  }
 }
 
 [data-theme='dark'] .heroBanner {
-  background: linear-gradient(
-    135deg,
-    rgba(102, 126, 234, 0.08) 0%,
-    rgba(118, 75, 162, 0.08) 50%,
-    rgba(102, 126, 234, 0.05) 100%
-  );
+  background: linear-gradient(180deg, #0f172a 0%, #1a1f3a 50%, #151e2b 100%);
+}
+
+[data-theme='dark'] .heroBanner::before {
+  background:
+    /* Horizontal lines */
+    repeating-linear-gradient(
+      0deg,
+      rgba(96, 165, 250, 0.08) 0px,
+      rgba(96, 165, 250, 0.08) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    /* Vertical lines */
+    repeating-linear-gradient(
+      90deg,
+      rgba(167, 139, 250, 0.08) 0px,
+      rgba(167, 139, 250, 0.08) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    /* Gradient overlays */
+    radial-gradient(ellipse 600px 400px at 20% 0%, rgba(96, 165, 250, 0.2) 0%, transparent 40%),
+    radial-gradient(ellipse 600px 400px at 80% 100%, rgba(167, 139, 250, 0.15) 0%, transparent 40%);
+  animation: gridShift 15s linear infinite;
 }
 
 .heroContainer {
@@ -53,29 +95,46 @@
 }
 
 .heroTitle {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.2;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.15;
   margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  background: linear-gradient(135deg, #0f172a 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='dark'] .heroTitle {
+  background: linear-gradient(135deg, #f0f9ff 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .heroSubtitle {
-  font-size: 1.25rem;
-  color: var(--ifm-color-emphasis-700);
-  margin-bottom: 2rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  color: #475569;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  font-weight: 400;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 [data-theme='dark'] .heroSubtitle {
-  color: var(--ifm-color-emphasis-600);
+  color: #cbd5e1;
 }
 
-/* Stats Bar */
+/* Stats Bar - Clean Minimal Design */
 .heroStats {
   display: flex;
-  gap: 3rem;
-  margin-bottom: 2.5rem;
-  padding: 1rem 0;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  padding: 0;
   justify-content: center;
 }
 
@@ -83,20 +142,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .statNumber {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--ifm-color-primary);
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1;
 }
 
 .statLabel {
-  font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8rem;
+  color: #64748b;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+[data-theme='dark'] .statLabel {
+  color: #94a3b8;
 }
 
 /* Buttons */
@@ -142,30 +210,56 @@
   }
 
   .heroTitle {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 
   .heroSubtitle {
-    font-size: 1.125rem;
-  }
-
-  .gradientOrb {
-    width: 250px;
-    height: 250px;
+    font-size: 1.15rem;
   }
 
   .heroStats {
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .statNumber {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .heroBanner {
+    padding: 4rem 0 3rem;
+  }
+
   .heroTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroStats {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    gap: 0.25rem;
+  }
+
+  .statNumber {
     font-size: 1.75rem;
+  }
+
+  .statLabel {
+    font-size: 0.7rem;
   }
 
   .buttons {

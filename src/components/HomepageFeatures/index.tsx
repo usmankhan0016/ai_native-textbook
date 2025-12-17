@@ -59,7 +59,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, description, link, highlights }: FeatureItem) {
   return (
-    <div className={clsx("col col--6 col--lg-3")}>
+    <div className={styles.featureWrapper}>
       <div className={styles.featureCard}>
         <Heading as="h3" className={styles.featureTitle}>
           {title}
@@ -91,7 +91,7 @@ export default function HomepageFeatures(): JSX.Element {
             humanoid robotics
           </p>
         </div>
-        <div className="row">
+        <div className={styles.featureGrid}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

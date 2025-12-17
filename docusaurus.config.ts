@@ -89,7 +89,7 @@ const config: Config = {
           label: "Textbook",
         },
         {
-          href: "https://github.com/usmankhan0016/ai_native-textbook",
+          href: "https://github.com/usmankhan0016",
           label: "GitHub",
           position: "right",
         },
@@ -125,12 +125,12 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/usmankhan0016/ai_native-textbook",
+              href: "https://github.com/usmankhan0016",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with dedication and ❤ by Usman Nasir.`,
     },
     prism: {
       theme: prismThemes.github,
