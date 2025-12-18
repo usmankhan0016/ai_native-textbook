@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+docosaurus_textbook/node_modules/
 .pnp
 .pnp.js
 
@@ -7,6 +8,8 @@ node_modules/
 build/
 dist/
 .docusaurus/
+docosaurus_textbook/build/
+docosaurus_textbook/.docusaurus/
 .cache/
 
 # Environment variables

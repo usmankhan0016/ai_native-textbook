@@ -5,7 +5,6 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import WhyThisTextbook from "@site/src/components/WhyThisTextbook";
 import CTASection from "@site/src/components/CTASection";
-import ChatbotWidget from "@site/src/components/ChatbotWidget";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -75,7 +74,6 @@ export default function Home(): JSX.Element {
         <WhyThisTextbook />
         <CTASection />
       </main>
-      <ChatbotWidget />
     </Layout>
   );
 }
