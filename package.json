@@ -4,12 +4,12 @@
   "description": "Physical AI & Humanoid Robotics Textbook with RAG Chatbot Backend",
   "private": true,
   "scripts": {
-    "textbook:start": "cd docosaurus_textbook && npm start",
-    "textbook:build": "cd docosaurus_textbook && npm run build",
-    "textbook:serve": "cd docosaurus_textbook && npm run serve",
-    "textbook:deploy": "cd docosaurus_textbook && npm run deploy",
-    "textbook:clear": "cd docosaurus_textbook && npm run clear",
-    "textbook:dev": "cd docosaurus_textbook && npm run dev"
+    "textbook:start": "cd docusaurus_textbook && npm start",
+    "textbook:build": "cd docusaurus_textbook && npm run build",
+    "textbook:serve": "cd docusaurus_textbook && npm run serve",
+    "textbook:deploy": "cd docusaurus_textbook && npm run deploy",
+    "textbook:clear": "cd docusaurus_textbook && npm run clear",
+    "textbook:dev": "cd docusaurus_textbook && npm run dev"
   },
   "keywords": [
     "robotics",
