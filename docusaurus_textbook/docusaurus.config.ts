@@ -27,7 +27,7 @@ const config: Config = {
 
   // Custom fields for RAG backend configuration
   customFields: {
-    backendUrl: process.env.BACKEND_URL || 'http://localhost:8000',
+    backendUrl: process.env.BACKEND_URL || 'https://Usmankhan0016-textbook-rag-backend.hf.space',
   },
 
   // Even if you don't use internationalization, you can use this field to set
