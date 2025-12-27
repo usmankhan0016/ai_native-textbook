@@ -753,7 +753,7 @@ export default function ChatbotWidget(): JSX.Element {
                     : "Ask your question..."
               }
               rows={1}
-              disabled={isLoading || !isSessionReady}
+              disabled={isLoading}
             />
             <button
               className={styles.sendButton}
