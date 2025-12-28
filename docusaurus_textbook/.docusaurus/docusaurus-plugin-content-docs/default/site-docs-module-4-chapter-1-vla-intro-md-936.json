@@ -1,0 +1,23 @@
+{
+  "id": "module-4/chapter-1-vla-intro",
+  "title": "Chapter 1: Introduction to Vision–Language–Action Robotics",
+  "description": "Module 10 | Difficulty 8–10 hours",
+  "source": "@site/docs/module-4/chapter-1-vla-intro.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/chapter-1-vla-intro",
+  "permalink": "/ai_native-textbook/docs/module-4/chapter-1-vla-intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 4: Vision–Language–Action (VLA) Robotics",
+    "permalink": "/ai_native-textbook/docs/module-4/"
+  },
+  "next": {
+    "title": "Chapter 2: Vision for VLA – Building Perception Pipelines",
+    "permalink": "/ai_native-textbook/docs/module-4/chapter-2-vision-for-vla"
+  }
+}

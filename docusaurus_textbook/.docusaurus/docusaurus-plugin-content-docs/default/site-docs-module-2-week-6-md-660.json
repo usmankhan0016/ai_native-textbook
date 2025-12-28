@@ -1,0 +1,68 @@
+{
+  "id": "module-2/week-6",
+  "title": "Week 6 Practice Guide: Gazebo Fundamentals",
+  "description": "Week 6 (5 days of study) | 18-20 hours total | Gazebo physics simulation",
+  "source": "@site/docs/module-2/week-6.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/week-6",
+  "permalink": "/ai_native-textbook/docs/module-2/week-6",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "practice",
+      "permalink": "/ai_native-textbook/docs/tags/practice"
+    },
+    {
+      "inline": true,
+      "label": "gazebo",
+      "permalink": "/ai_native-textbook/docs/tags/gazebo"
+    },
+    {
+      "inline": true,
+      "label": "week-6",
+      "permalink": "/ai_native-textbook/docs/tags/week-6"
+    },
+    {
+      "inline": true,
+      "label": "hands-on",
+      "permalink": "/ai_native-textbook/docs/tags/hands-on"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "sidebar_label": "Week 6: Gazebo Fundamentals",
+    "title": "Week 6 Practice Guide: Gazebo Fundamentals",
+    "tags": [
+      "practice",
+      "gazebo",
+      "week-6",
+      "hands-on"
+    ],
+    "difficulty": "Intermediate",
+    "module": 2,
+    "week": 6,
+    "prerequisites": [
+      "Chapters 1-2"
+    ],
+    "estimated_time": "18-20 hours",
+    "topics": [
+      "gazebo",
+      "physics-simulation",
+      "world-creation",
+      "ros2-integration"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ch.4: Unity High-Fidelity",
+    "permalink": "/ai_native-textbook/docs/module-2/chapter-4-unity-high-fidelity-simulation"
+  },
+  "next": {
+    "title": "Week 7: Sensors & Unity",
+    "permalink": "/ai_native-textbook/docs/module-2/week-7"
+  }
+}

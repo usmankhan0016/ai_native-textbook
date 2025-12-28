@@ -1,0 +1,85 @@
+{
+  "id": "module-3/chapter-1-isaac-introduction",
+  "title": "Chapter 1: Introduction to NVIDIA Isaac Platform",
+  "description": "Duration Beginner | Week: 8",
+  "source": "@site/docs/module-3/chapter-1-isaac-introduction.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/chapter-1-isaac-introduction",
+  "permalink": "/ai_native-textbook/docs/module-3/chapter-1-isaac-introduction",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "isaac-sim",
+      "permalink": "/ai_native-textbook/docs/tags/isaac-sim"
+    },
+    {
+      "inline": true,
+      "label": "nvidia",
+      "permalink": "/ai_native-textbook/docs/tags/nvidia"
+    },
+    {
+      "inline": true,
+      "label": "gpu-acceleration",
+      "permalink": "/ai_native-textbook/docs/tags/gpu-acceleration"
+    },
+    {
+      "inline": true,
+      "label": "cuda",
+      "permalink": "/ai_native-textbook/docs/tags/cuda"
+    },
+    {
+      "inline": true,
+      "label": "simulation",
+      "permalink": "/ai_native-textbook/docs/tags/simulation"
+    },
+    {
+      "inline": true,
+      "label": "architecture",
+      "permalink": "/ai_native-textbook/docs/tags/architecture"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "Ch. 1: Isaac Platform Intro",
+    "title": "Chapter 1: Introduction to NVIDIA Isaac Platform",
+    "tags": [
+      "isaac-sim",
+      "nvidia",
+      "gpu-acceleration",
+      "cuda",
+      "simulation",
+      "architecture"
+    ],
+    "difficulty": "Beginner",
+    "module": 3,
+    "week": 8,
+    "prerequisites": [
+      "Module 1: ROS 2 Fundamentals",
+      "Module 2: Digital Twin Simulation",
+      "Linux command line"
+    ],
+    "estimated_time": "4-5 hours",
+    "topics": [
+      "Isaac Sim",
+      "Isaac ROS",
+      "Isaac Lab",
+      "CUDA",
+      "PhysX 5",
+      "Omniverse",
+      "digital twins"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 3: The AI-Robot Brain",
+    "permalink": "/ai_native-textbook/docs/module-3/"
+  },
+  "next": {
+    "title": "Ch. 2: Isaac Sim Robotics",
+    "permalink": "/ai_native-textbook/docs/module-3/chapter-2-isaac-sim"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "module-3/week-8",
+  "title": "Week 8 Practice Guide: Isaac Foundations (Chapters 1-2)",
+  "description": "Week 7-10 hours | Chapters: 1-2",
+  "source": "@site/docs/module-3/week-8.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/week-8",
+  "permalink": "/ai_native-textbook/docs/module-3/week-8",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "practice-guide",
+      "permalink": "/ai_native-textbook/docs/tags/practice-guide"
+    },
+    {
+      "inline": true,
+      "label": "week-8",
+      "permalink": "/ai_native-textbook/docs/tags/week-8"
+    },
+    {
+      "inline": true,
+      "label": "isaac-sim",
+      "permalink": "/ai_native-textbook/docs/tags/isaac-sim"
+    },
+    {
+      "inline": true,
+      "label": "hands-on",
+      "permalink": "/ai_native-textbook/docs/tags/hands-on"
+    },
+    {
+      "inline": true,
+      "label": "foundations",
+      "permalink": "/ai_native-textbook/docs/tags/foundations"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "sidebar_label": "Week 8: Isaac Foundations",
+    "title": "Week 8 Practice Guide: Isaac Foundations (Chapters 1-2)",
+    "tags": [
+      "practice-guide",
+      "week-8",
+      "isaac-sim",
+      "hands-on",
+      "foundations"
+    ],
+    "difficulty": "Intermediate",
+    "module": 3,
+    "week": 8,
+    "prerequisites": [
+      "Chapter 1-2 complete"
+    ],
+    "estimated_time": "7-10 hours",
+    "topics": [
+      "Isaac Sim",
+      "URDF conversion",
+      "physics tuning",
+      "sensor simulation",
+      "synthetic data"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ch. 5: Jetson Deployment",
+    "permalink": "/ai_native-textbook/docs/module-3/chapter-5-deployment"
+  },
+  "next": {
+    "title": "Week 9-10: AI & Capstone",
+    "permalink": "/ai_native-textbook/docs/module-3/week-9-10"
+  }
+}

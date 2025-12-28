@@ -1,0 +1,84 @@
+{
+  "id": "module-1/chapter-4-urdf-for-humanoids",
+  "title": "Chapter 4: URDF for Humanoid Robots",
+  "description": "Learning Objectives",
+  "source": "@site/docs/module-1/chapter-4-urdf-for-humanoids.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/chapter-4-urdf-for-humanoids",
+  "permalink": "/ai_native-textbook/docs/module-1/chapter-4-urdf-for-humanoids",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "URDF",
+      "permalink": "/ai_native-textbook/docs/tags/urdf"
+    },
+    {
+      "inline": true,
+      "label": "Xacro",
+      "permalink": "/ai_native-textbook/docs/tags/xacro"
+    },
+    {
+      "inline": true,
+      "label": "RViz",
+      "permalink": "/ai_native-textbook/docs/tags/r-viz"
+    },
+    {
+      "inline": true,
+      "label": "Gazebo",
+      "permalink": "/ai_native-textbook/docs/tags/gazebo"
+    },
+    {
+      "inline": true,
+      "label": "Humanoid",
+      "permalink": "/ai_native-textbook/docs/tags/humanoid"
+    },
+    {
+      "inline": true,
+      "label": "Week5",
+      "permalink": "/ai_native-textbook/docs/tags/week-5"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Chapter 4: URDF for Humanoid Robots",
+    "tags": [
+      "URDF",
+      "Xacro",
+      "RViz",
+      "Gazebo",
+      "Humanoid",
+      "Week5"
+    ],
+    "difficulty": "Beginner",
+    "module": 1,
+    "week": 5,
+    "prerequisites": [
+      "Chapter 1",
+      "Chapter 2",
+      "Chapter 3",
+      "XML basics"
+    ],
+    "estimated_time": "6-8 hours",
+    "topics": [
+      "URDF",
+      "Xacro",
+      "RViz visualization",
+      "Gazebo simulation",
+      "Robot kinematics",
+      "Collision meshes"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 3: Packages, Launch Files, and Parameters",
+    "permalink": "/ai_native-textbook/docs/module-1/chapter-3-ros2-packages-launch"
+  },
+  "next": {
+    "title": "Week 3 Practice Guide",
+    "permalink": "/ai_native-textbook/docs/module-1/week-3"
+  }
+}

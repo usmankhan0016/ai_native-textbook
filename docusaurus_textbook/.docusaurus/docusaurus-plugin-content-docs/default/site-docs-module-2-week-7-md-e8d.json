@@ -1,0 +1,76 @@
+{
+  "id": "module-2/week-7",
+  "title": "Week 7 Practice Guide: Sensors & Unity",
+  "description": "Week 7 (5 days of study) | 18-20 hours total | Sensors in Gazebo + Unity high-fidelity rendering",
+  "source": "@site/docs/module-2/week-7.md",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/week-7",
+  "permalink": "/ai_native-textbook/docs/module-2/week-7",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "practice",
+      "permalink": "/ai_native-textbook/docs/tags/practice"
+    },
+    {
+      "inline": true,
+      "label": "sensors",
+      "permalink": "/ai_native-textbook/docs/tags/sensors"
+    },
+    {
+      "inline": true,
+      "label": "unity",
+      "permalink": "/ai_native-textbook/docs/tags/unity"
+    },
+    {
+      "inline": true,
+      "label": "week-7",
+      "permalink": "/ai_native-textbook/docs/tags/week-7"
+    },
+    {
+      "inline": true,
+      "label": "hands-on",
+      "permalink": "/ai_native-textbook/docs/tags/hands-on"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "sidebar_label": "Week 7: Sensors & Unity",
+    "title": "Week 7 Practice Guide: Sensors & Unity",
+    "tags": [
+      "practice",
+      "sensors",
+      "unity",
+      "week-7",
+      "hands-on"
+    ],
+    "difficulty": "Advanced",
+    "module": 2,
+    "week": 7,
+    "prerequisites": [
+      "Week 6",
+      "Chapters 3-4"
+    ],
+    "estimated_time": "18-20 hours",
+    "topics": [
+      "sensor-simulation",
+      "unity-robotics",
+      "ros2-communication",
+      "rendering",
+      "dataset-export"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 6: Gazebo Fundamentals",
+    "permalink": "/ai_native-textbook/docs/module-2/week-6"
+  },
+  "next": {
+    "title": "Module 3: The AI-Robot Brain",
+    "permalink": "/ai_native-textbook/docs/module-3/"
+  }
+}

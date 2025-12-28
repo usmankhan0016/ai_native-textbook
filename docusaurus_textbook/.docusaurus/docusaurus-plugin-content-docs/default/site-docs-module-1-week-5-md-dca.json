@@ -1,0 +1,84 @@
+{
+  "id": "module-1/week-5",
+  "title": "Week 5 Practice Guide",
+  "description": "Focus: URDF for humanoid robots and Module 1 Capstone Project (Chapter 4)",
+  "source": "@site/docs/module-1/week-5.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/week-5",
+  "permalink": "/ai_native-textbook/docs/module-1/week-5",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "Week5",
+      "permalink": "/ai_native-textbook/docs/tags/week-5"
+    },
+    {
+      "inline": true,
+      "label": "Practice",
+      "permalink": "/ai_native-textbook/docs/tags/practice"
+    },
+    {
+      "inline": true,
+      "label": "URDF",
+      "permalink": "/ai_native-textbook/docs/tags/urdf"
+    },
+    {
+      "inline": true,
+      "label": "Xacro",
+      "permalink": "/ai_native-textbook/docs/tags/xacro"
+    },
+    {
+      "inline": true,
+      "label": "RViz",
+      "permalink": "/ai_native-textbook/docs/tags/r-viz"
+    },
+    {
+      "inline": true,
+      "label": "Gazebo",
+      "permalink": "/ai_native-textbook/docs/tags/gazebo"
+    },
+    {
+      "inline": true,
+      "label": "Capstone",
+      "permalink": "/ai_native-textbook/docs/tags/capstone"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "Week 5 Practice Guide",
+    "tags": [
+      "Week5",
+      "Practice",
+      "URDF",
+      "Xacro",
+      "RViz",
+      "Gazebo",
+      "Capstone"
+    ],
+    "difficulty": "Beginner",
+    "module": 1,
+    "week": 5,
+    "estimated_time": "10-12 hours",
+    "topics": [
+      "URDF",
+      "Xacro",
+      "RViz",
+      "Gazebo",
+      "Robot modeling",
+      "Capstone project"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 4 Practice Guide",
+    "permalink": "/ai_native-textbook/docs/module-1/week-4"
+  },
+  "next": {
+    "title": "Module 2: Digital Twin",
+    "permalink": "/ai_native-textbook/docs/module-2/"
+  }
+}

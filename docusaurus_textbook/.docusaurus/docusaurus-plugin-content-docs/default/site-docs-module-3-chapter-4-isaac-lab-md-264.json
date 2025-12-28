@@ -1,0 +1,78 @@
+{
+  "id": "module-3/chapter-4-isaac-lab",
+  "title": "Chapter 4: Synthetic Data Generation with Isaac Lab",
+  "description": "Duration Intermediate | Week: 9",
+  "source": "@site/docs/module-3/chapter-4-isaac-lab.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/chapter-4-isaac-lab",
+  "permalink": "/ai_native-textbook/docs/module-3/chapter-4-isaac-lab",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "isaac-lab",
+      "permalink": "/ai_native-textbook/docs/tags/isaac-lab"
+    },
+    {
+      "inline": true,
+      "label": "synthetic-data",
+      "permalink": "/ai_native-textbook/docs/tags/synthetic-data"
+    },
+    {
+      "inline": true,
+      "label": "domain-randomization",
+      "permalink": "/ai_native-textbook/docs/tags/domain-randomization"
+    },
+    {
+      "inline": true,
+      "label": "machine-learning",
+      "permalink": "/ai_native-textbook/docs/tags/machine-learning"
+    },
+    {
+      "inline": true,
+      "label": "pytorch",
+      "permalink": "/ai_native-textbook/docs/tags/pytorch"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "sidebar_label": "Ch. 4: Synthetic Data Isaac Lab",
+    "title": "Chapter 4: Synthetic Data Generation with Isaac Lab",
+    "tags": [
+      "isaac-lab",
+      "synthetic-data",
+      "domain-randomization",
+      "machine-learning",
+      "pytorch"
+    ],
+    "difficulty": "Intermediate",
+    "module": 3,
+    "week": 9,
+    "prerequisites": [
+      "Chapter 1-3",
+      "PyTorch basics",
+      "Python 3.10+"
+    ],
+    "estimated_time": "6-8 hours",
+    "topics": [
+      "Isaac Lab",
+      "gymnasium environments",
+      "domain randomization",
+      "synthetic datasets",
+      "transfer learning",
+      "sim-to-real"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ch. 3: Isaac ROS Perception",
+    "permalink": "/ai_native-textbook/docs/module-3/chapter-3-isaac-ros"
+  },
+  "next": {
+    "title": "Ch. 5: Jetson Deployment",
+    "permalink": "/ai_native-textbook/docs/module-3/chapter-5-deployment"
+  }
+}

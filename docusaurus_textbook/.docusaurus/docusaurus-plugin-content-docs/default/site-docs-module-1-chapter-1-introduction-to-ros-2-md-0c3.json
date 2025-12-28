@@ -1,0 +1,70 @@
+{
+  "id": "module-1/chapter-1-introduction-to-ros2",
+  "title": "Chapter 1: Introduction to ROS 2",
+  "description": "Learning Objectives",
+  "source": "@site/docs/module-1/chapter-1-introduction-to-ros2.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/chapter-1-introduction-to-ros2",
+  "permalink": "/ai_native-textbook/docs/module-1/chapter-1-introduction-to-ros2",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "ROS2",
+      "permalink": "/ai_native-textbook/docs/tags/ros-2"
+    },
+    {
+      "inline": true,
+      "label": "Fundamentals",
+      "permalink": "/ai_native-textbook/docs/tags/fundamentals"
+    },
+    {
+      "inline": true,
+      "label": "Beginner",
+      "permalink": "/ai_native-textbook/docs/tags/beginner"
+    },
+    {
+      "inline": true,
+      "label": "Week3",
+      "permalink": "/ai_native-textbook/docs/tags/week-3"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "Ch1: Introduction",
+    "title": "Chapter 1: Introduction to ROS 2",
+    "tags": [
+      "ROS2",
+      "Fundamentals",
+      "Beginner",
+      "Week3"
+    ],
+    "difficulty": "Beginner",
+    "module": 1,
+    "week": 3,
+    "prerequisites": [
+      "Ubuntu 22.04",
+      "Python basics",
+      "Command line"
+    ],
+    "estimated_time": "2-3 hours",
+    "topics": [
+      "ROS 2 architecture",
+      "DDS middleware",
+      "ROS 1 vs ROS 2",
+      "Simulator integration"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 1: ROS 2",
+    "permalink": "/ai_native-textbook/docs/module-1/"
+  },
+  "next": {
+    "title": "Ch2: Architecture",
+    "permalink": "/ai_native-textbook/docs/module-1/chapter-2-ros2-architecture"
+  }
+}
