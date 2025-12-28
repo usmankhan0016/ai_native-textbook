@@ -1,0 +1,19 @@
+{
+  "id": "module-4/week-13",
+  "title": "Week 13: VLA Capstone Sprint & Integration",
+  "description": "Module 13 (Part 2) | Difficulty 40–50 hours (2-week sprint)",
+  "source": "@site/docs/module-4/week-13.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/week-13",
+  "permalink": "/ai_native-textbook/docs/module-4/week-13",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 4: VLA Control Architecture & Deployment",
+    "permalink": "/ai_native-textbook/docs/module-4/chapter-4-vla-control-architecture"
+  }
+}

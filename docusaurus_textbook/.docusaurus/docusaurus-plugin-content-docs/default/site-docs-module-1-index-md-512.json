@@ -1,0 +1,28 @@
+{
+  "id": "module-1/index",
+  "title": "Module 1: The Robotic Nervous System (ROS 2)",
+  "description": "Duration: Weeks 3-5 (3 weeks)",
+  "source": "@site/docs/module-1/index.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/",
+  "permalink": "/ai_native-textbook/docs/module-1/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "Module 1: ROS 2",
+    "title": "Module 1: The Robotic Nervous System (ROS 2)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to Physical AI & Humanoid Robotics",
+    "permalink": "/ai_native-textbook/docs/intro"
+  },
+  "next": {
+    "title": "Ch1: Introduction",
+    "permalink": "/ai_native-textbook/docs/module-1/chapter-1-introduction-to-ros2"
+  }
+}

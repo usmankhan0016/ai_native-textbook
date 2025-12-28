@@ -1,0 +1,82 @@
+{
+  "id": "module-3/index",
+  "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac™ Platform)",
+  "description": "Your next frontier: Production-grade AI-powered robotics",
+  "source": "@site/docs/module-3/index.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/",
+  "permalink": "/ai_native-textbook/docs/module-3/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [
+    {
+      "inline": true,
+      "label": "nvidia-isaac",
+      "permalink": "/ai_native-textbook/docs/tags/nvidia-isaac"
+    },
+    {
+      "inline": true,
+      "label": "simulation",
+      "permalink": "/ai_native-textbook/docs/tags/simulation"
+    },
+    {
+      "inline": true,
+      "label": "perception",
+      "permalink": "/ai_native-textbook/docs/tags/perception"
+    },
+    {
+      "inline": true,
+      "label": "deployment",
+      "permalink": "/ai_native-textbook/docs/tags/deployment"
+    },
+    {
+      "inline": true,
+      "label": "robotics",
+      "permalink": "/ai_native-textbook/docs/tags/robotics"
+    }
+  ],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "sidebar_label": "Module 3: The AI-Robot Brain",
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac™ Platform)",
+    "tags": [
+      "nvidia-isaac",
+      "simulation",
+      "perception",
+      "deployment",
+      "robotics"
+    ],
+    "difficulty": "Intermediate",
+    "module": 3,
+    "week": "8-10",
+    "prerequisites": [
+      "Module 1: ROS 2 Fundamentals",
+      "Module 2: Digital Twin Simulation",
+      "URDF/SDF syntax knowledge",
+      "ROS 2 nodes/topics/services"
+    ],
+    "estimated_time": "24-30 hours",
+    "topics": [
+      "Isaac Sim",
+      "Isaac ROS",
+      "Isaac Lab",
+      "CUDA",
+      "TensorRT",
+      "Jetson deployment",
+      "synthetic data",
+      "AI perception",
+      "sim-to-real"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 7: Sensors & Unity",
+    "permalink": "/ai_native-textbook/docs/module-2/week-7"
+  },
+  "next": {
+    "title": "Ch. 1: Isaac Platform Intro",
+    "permalink": "/ai_native-textbook/docs/module-3/chapter-1-isaac-introduction"
+  }
+}
